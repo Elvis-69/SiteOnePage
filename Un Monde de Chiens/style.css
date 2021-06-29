@@ -109,83 +109,24 @@ body {
 }
 
 .articlePreambule {
-    margin-top: 5%;    
+    margin-top: 8%;    
     display: flex;
 }
 
 .articlePreambule img {
-    float: right;
-    margin : 10px 200px 100px 10px;
-    object-fit: cover;
-    width: 200%; 
+    float: left;
+    margin : -20px 200px 100px 10px;
+    object-fit: contain;
+    width: 200%;
+    max-width: 650px;
+    max-height: 450px; 
 }
 
-.articlePreambule p {
-    margin-top: 2%;
+.articlePreambule p span {
+    white-space: nowrap; /* interdiction de passer à la ligne */
 }
 
 /** FIN ARTICLE PRINCIPAL ********** */
-
-/** BARRE TITRE ***************************************************************************** */
-.titre {
-    white-space: nowrap; /* interdiction de passer à la ligne */
-    width: 70%;
-    background-color: var(--baseColor);
-    padding-top : 1px;
-    color : white;
-    font-size: 2em;
-    height : 70px;
-}
-
-.titre p {
-    margin : 14px 0 0 40px;
-}
-
-/** FIN BARRE TITRE ************ */
-
-/** ARTICLES ************************************************************************** */
-
-.article, .articleG {
-    margin-top: 5%;    
-    display: flex;
-}
-
-.article img, .articleG img {
-    width: 700px;
-    height: 700px;
-    object-fit: cover;
-
-    border: solid 15px white;
-    box-shadow: 5px 5px 5px grey;
-}
-
-.article p :hover, .articleG p :hover {
-    cursor: pointer;
-    opacity: 0.7;
-}
-
-.article img { 
-    float: left;   
-    margin : 10px 200px 30px 10px;
-}
-
-.articleG img {
-    float: right;
-    margin : 10px 10px 30px 200px;
-}
-
-.ss-titre {
-    white-space: nowrap; /* interdiction de passer à la ligne */
-    color : var(--baseGrey);
-    font-size: 1.6em;
-    font-weight: bold;
-}
-
-.ss-titre ~ span:not(.ss-titre) {
-    font-weight: bold;
-}
-
-/** FIN ARTICLE *********** */
 
 /** LES IMAGES D'ARTICLES 1 & 2 *********************************************** */
 
@@ -217,6 +158,67 @@ body {
 }
 
 /** FIN IMAGES D'ARTICLES 1 & 2 *********** */
+
+/** BARRE TITRE ***************************************************************************** */
+.titre {
+    white-space: nowrap; /* interdiction de passer à la ligne */
+    width: 70%;
+    background-color: var(--baseColor);
+    padding-top : 1px;
+    color : white;
+    font-size: 2em;
+    height : 70px;
+}
+
+.titre p {
+    margin : 14px 0 0 40px;
+}
+
+/** FIN BARRE TITRE ************ */
+
+/** ARTICLES ************************************************************************** */
+
+.article, .articleG {
+    margin-top: 5%;    
+    display: flex;
+}
+
+.survol img {
+    width: 700px;
+    height: 700px;
+    object-fit: cover;
+
+    border: solid 15px white;
+    box-shadow: 5px 5px 5px grey;
+}
+
+.survol :hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.article .survol { 
+    float: left;   
+    margin : -20px 200px 30px 0px;
+}
+
+.articleG .survol {
+    float: right;
+    margin : -20px 0px 30px 160px;
+}
+
+.ss-titre {
+    white-space: nowrap; /* interdiction de passer à la ligne */
+    color : var(--baseGrey);
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+.ss-titre ~ span:not(.ss-titre) {
+    font-weight: bold;
+}
+
+/** FIN ARTICLE *********** */
 
 /** LES SEPARATIONS ***************************************************************** */
 
