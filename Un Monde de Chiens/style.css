@@ -1,0 +1,332 @@
+
+:root {
+    --baseColor : #9F7854;
+    --baseColor2 : #be9671;
+    --baseGrey : #3A3737;
+
+}
+
+body {
+    width : 100%;
+    margin : auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*img {
+    max-width: 100%;
+}*/
+
+/****** HEADER ****/
+
+.header {
+    width : 100%;
+}
+
+.bandeau {
+    background-image: url("../Ex-siteOnePage/images/bandeau.jpg");
+    display: flex;
+    justify-content: left;
+    align-items: normal;
+    background-size: cover;
+    width : 100%;
+    height: 100vh;
+    /* background-size: fill; */
+    text-align: start, left;
+}
+
+.logo img {
+    width : 120%;
+    min-width: 500px;
+    /*padding-left: 35%;*/
+}
+
+/** NAV BARRE ******************************************************************* */
+
+.nav {
+    background-color: var(--baseColor);
+    width : 100%;
+    height: 70px;
+    display: flex;
+}
+
+.boutons {
+    display: inline-block;
+    padding-left : 0.7%;
+    width : 12%;
+    height: inherit;
+    display: flex;
+    margin: auto;
+
+    white-space: nowrap; /* interdiction de passer à la ligne */
+    overflow: hidden;
+    /* color : white;  */
+    text-align: center;
+}
+
+.boutons :hover {
+    background-color: var(--baseColor2);
+    width : 100%;
+    height : 70px;
+    padding-top: 20px;
+    margin: auto;
+}
+
+.boutons a {
+    margin: auto;
+    color : white;
+    font-size: 1.3em;
+    text-decoration: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
+/** FIN NAV BARRE ***************************************************************** */
+
+/** FIN HEADER **************** */
+
+.conteneur {
+    width: 86%;
+    margin: auto;
+}
+
+/** ARTICLE PRINCIPAL ************************************************************* */
+
+.artPrincipal, .preambule {
+    
+    font-size: 1.2em;
+}
+
+.titrePrincipal {
+    display: flex;
+}
+
+.textePrincipal p {
+    max-width: 90%;
+    margin: auto;
+    padding-top: 4%;
+}
+
+.titrePreambule {
+    color: var(--baseGrey);
+    margin-top: 6%;
+    text-align: center;
+    font-size: 2em;
+}
+
+.articlePreambule {
+    margin-top: 5%;    
+    display: flex;
+}
+
+.articlePreambule img {
+    float: right;
+    margin : 10px 200px 100px 10px;
+    /* margin-right: 10%; */
+    object-fit: contain;
+    width: 200%; 
+    /* max-height: auto;
+    width: auto;*/
+}
+
+.articlePreambule p {
+    margin-top: 2%;
+    /* max-width: 44%; */
+}
+
+/** FIN ARTICLE PRINCIPAL ******************************* */
+
+/** BARRE TITRE ************************************* */
+.titre {
+    white-space: nowrap; /* interdiction de passer à la ligne */
+    width: 70%;
+    background-color: var(--baseColor);
+    padding-top : 1px;
+    color : white;
+    font-size: 2em;
+    height : 70px;
+}
+
+.titre p {
+    margin : 14px 0 0 40px;
+}
+
+/** FIN BARRE TITRE ********************************************* */
+
+/** ARTICLES ************************************************* */
+
+.article, .articleG {
+    margin-top: 5%;    
+    display: flex;
+}
+
+.article img, .articleG img {
+    width: 700px;
+    height: 700px;
+    object-fit: cover;
+
+    border: solid 15px white;
+    box-shadow: 5px 5px 5px grey;
+    /* object-fit: contain; */
+    /* width: 100%;  
+    height: 100%; */
+    /* margin-right: 10%; */
+    /* max-height: auto;
+    width: auto;*/
+}
+
+.article img { 
+    float: left;   
+    margin : 10px 200px 100px 10px;
+}
+
+.articleG img {
+    float: right;
+    margin : 10px 10px 100px 200px;
+}
+
+/*.article p {
+    
+    margin-top: 7%;
+     max-width: 580px; */
+    /* max-width: 44%; 
+}*/
+
+.ss-titre {
+    white-space: nowrap; /* interdiction de passer à la ligne */
+    color : var(--baseGrey);
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+.ss-titre ~ span:not(.ss-titre) {
+    font-weight: bold;
+}
+
+/*.espaceV {
+    width: 100%;
+    max-width: 100px;
+}*/
+
+/** FIN ARTICLE ********************************************* */
+
+/** LES IMAGES D'ARTICLES 1 & 2 *********************************** */
+
+.article1 .article img {
+    float: right;
+    border: none;
+    box-shadow: none;
+    margin : 0px 50px 100px 200px;
+    /* margin : 1%; */
+    width: 525px;
+    height: 525px;
+    object-fit: contain;
+}
+
+.article2 .article img {
+    float: left;
+    border: none;
+    box-shadow: none;   
+    margin : 0px 200px 100px 10px;
+    width: 640px;
+    height: 428px;
+    object-fit: contain;
+}
+
+/** FIN IMAGES D'ARTICLES 1 & 2 ********************************** */
+
+/** LES SEPARATIONS ************************************** */
+
+/*.separation1 {
+    width: 100%;
+}*/
+
+.espace {
+    height: 70px;
+}
+
+.lignes hr {
+    height: 10px;
+    background-color: var(--baseColor);
+}
+
+.titre2, .titre3 {
+    display: flex;
+}
+
+.titrePrincipal img, .titre2 img, .titre3 img {
+    /*display: flex;
+    justify-content: left;
+    align-items: normal;*/
+    max-width : 50%;
+    max-height: 50vh;
+    padding-top: 4%;
+    margin: auto;
+}
+
+/*.titrePrincipal img {
+    display: flex;
+    justify-content: left;
+    align-items: normal;
+    max-width : 50%;
+    max-height: 50vh;
+    padding-top: 4%;
+    margin: auto;
+}*/
+
+/** FIN SEPARATIONS ************************************** */
+
+/** IMAGES DECO **************************************** */
+
+.article2 img {
+    width: 400px;
+    margin-left: 240px;
+    margin-bottom: -27px;
+}
+
+/** FIN IMAGES DECO **************************************** */
+
+/** BOUTON RETOUR ************************************** */
+
+.divRetour {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.retour {
+    text-align: center;
+    width: 10%;
+    font-size: 1.5em;
+    padding : 20px 0px;
+    background-color: var(--baseColor);
+}
+
+.retour a {
+    text-decoration: none;
+    color: white;
+}
+
+.retour :hover {
+    padding : 20px 32px;
+    text-decoration: none;
+    background-color: var(--baseColor2);
+    color: white;
+}
+
+/** FIN BOUTON RETOUR ************************************** */
+
+/** FOOTER ************************************** */
+
+.toutou img {
+    margin-bottom: -3px;
+    margin-left: -1px;
+}
+
+.footer {
+    width: 100%;
+    height: 120px;
+    background-color: var(--baseColor2);
+}
+
+/** FIN FOOTER ************************************** */
