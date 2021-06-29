@@ -12,10 +12,6 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-/*img {
-    max-width: 100%;
-}*/
-
 /****** HEADER ****/
 
 .header {
@@ -23,21 +19,19 @@ body {
 }
 
 .bandeau {
-    background-image: url("../Ex-siteOnePage/images/bandeau.jpg");
+    background-image: url("images/bandeau.jpg");
     display: flex;
     justify-content: left;
     align-items: normal;
     background-size: cover;
     width : 100%;
     height: 100vh;
-    /* background-size: fill; */
     text-align: start, left;
 }
 
 .logo img {
     width : 120%;
     min-width: 500px;
-    /*padding-left: 35%;*/
 }
 
 /** NAV BARRE ******************************************************************* */
@@ -59,11 +53,11 @@ body {
 
     white-space: nowrap; /* interdiction de passer à la ligne */
     overflow: hidden;
-    /* color : white;  */
     text-align: center;
 }
 
 .boutons :hover {
+    cursor: pointer;
     background-color: var(--baseColor2);
     width : 100%;
     height : 70px;
@@ -81,9 +75,9 @@ body {
 
 }
 
-/** FIN NAV BARRE ***************************************************************** */
+/** FIN NAV BARRE *********** */
 
-/** FIN HEADER **************** */
+/** FIN HEADER ************** */
 
 .conteneur {
     width: 86%;
@@ -122,21 +116,17 @@ body {
 .articlePreambule img {
     float: right;
     margin : 10px 200px 100px 10px;
-    /* margin-right: 10%; */
     object-fit: cover;
     width: 200%; 
-    /* max-height: auto;
-    width: auto;*/
 }
 
 .articlePreambule p {
     margin-top: 2%;
-    /* max-width: 44%; */
 }
 
-/** FIN ARTICLE PRINCIPAL ******************************* */
+/** FIN ARTICLE PRINCIPAL ********** */
 
-/** BARRE TITRE ************************************* */
+/** BARRE TITRE ***************************************************************************** */
 .titre {
     white-space: nowrap; /* interdiction de passer à la ligne */
     width: 70%;
@@ -151,9 +141,9 @@ body {
     margin : 14px 0 0 40px;
 }
 
-/** FIN BARRE TITRE ********************************************* */
+/** FIN BARRE TITRE ************ */
 
-/** ARTICLES ************************************************* */
+/** ARTICLES ************************************************************************** */
 
 .article, .articleG {
     margin-top: 5%;    
@@ -167,12 +157,11 @@ body {
 
     border: solid 15px white;
     box-shadow: 5px 5px 5px grey;
-    /* object-fit: contain; */
-    /* width: 100%;  
-    height: 100%; */
-    /* margin-right: 10%; */
-    /* max-height: auto;
-    width: auto;*/
+}
+
+.article p :hover, .articleG p :hover {
+    cursor: pointer;
+    opacity: 0.7;
 }
 
 .article img { 
@@ -185,13 +174,6 @@ body {
     margin : 10px 10px 30px 200px;
 }
 
-/*.article p {
-    
-    margin-top: 7%;
-     max-width: 580px; */
-    /* max-width: 44%; 
-}*/
-
 .ss-titre {
     white-space: nowrap; /* interdiction de passer à la ligne */
     color : var(--baseGrey);
@@ -203,14 +185,9 @@ body {
     font-weight: bold;
 }
 
-/*.espaceV {
-    width: 100%;
-    max-width: 100px;
-}*/
+/** FIN ARTICLE *********** */
 
-/** FIN ARTICLE ********************************************* */
-
-/** LES IMAGES D'ARTICLES 1 & 2 *********************************** */
+/** LES IMAGES D'ARTICLES 1 & 2 *********************************************** */
 
 .article1 .article img {
     float: right;
@@ -233,13 +210,15 @@ body {
     object-fit: contain;
 }
 
-/** FIN IMAGES D'ARTICLES 1 & 2 ********************************** */
+.article2 img {
+    width: 400px;
+    margin-left: 240px;
+    margin-bottom: -27px;
+}
 
-/** LES SEPARATIONS ************************************** */
+/** FIN IMAGES D'ARTICLES 1 & 2 *********** */
 
-/*.separation1 {
-    width: 100%;
-}*/
+/** LES SEPARATIONS ***************************************************************** */
 
 .espace {
     height: 70px;
@@ -258,41 +237,18 @@ body {
     display: flex;
 }
 
-.titrePrincipal img, .titre2 img, .titre3 img {
-    /*display: flex;
-    justify-content: left;
-    align-items: normal;*/
+.titrePrincipal img, .titre2 img, .titre3 img { /** Les titre en formes de Doug le chien **/
     max-width : 50%;
     max-height: 50vh;
     padding-top: 4%;
     margin: auto;
 }
 
-/*.titrePrincipal img {
-    display: flex;
-    justify-content: left;
-    align-items: normal;
-    max-width : 50%;
-    max-height: 50vh;
-    padding-top: 4%;
-    margin: auto;
-}*/
+/** FIN SEPARATIONS ************ */
 
-/** FIN SEPARATIONS ************************************** */
+/** BOUTONS RETOUR *************************************************************** */
 
-/** IMAGES DECO **************************************** */
-
-.article2 img {
-    width: 400px;
-    margin-left: 240px;
-    margin-bottom: -27px;
-}
-
-/** FIN IMAGES DECO **************************************** */
-
-/** BOUTONS RETOUR ************************************** */
-
-/** BOUTONS (type 1) ***** */
+    /** BOUTONS (type 1) ***** */
 
 .divRetour {
     width: 45%;
@@ -314,11 +270,12 @@ body {
 }
 
 .retour :hover {
+    cursor: pointer;
     text-decoration: none;
     color: var(--baseColor2);
 }
 
-/** FIN BOUTONS (type 1) **** */
+    /** FIN BOUTONS (type 1) **** */
 
 /** BOUTON (type 2) ***** */
 
@@ -350,9 +307,9 @@ body {
 
 /** FIN BOUTONS (type 2) **** */
 
-/** FIN BOUTONS RETOUR ************************************** */
+/** FIN BOUTONS RETOUR *********** */
 
-/** FOOTER ************************************** */
+/** FOOTER ************************************************************************* */
 
 .toutou img {
     margin-bottom: -3px;
@@ -376,4 +333,127 @@ body {
     color : var(--baseGrey);
 }
 
-/** FIN FOOTER ************************************** */
+/** FIN FOOTER ******** */
+
+/** DIAPORAMA **************************************************************** */
+
+#cache {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#diaporama {
+    visibility: hidden;
+    opacity: 0;
+}
+
+#slider-container {
+     
+    height: 800px;
+    width: 58%;
+    top: 48%; 
+    left: 50%; /* à 50%/50% du parent référent */
+    transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
+    position: fixed;
+    overflow: hidden;
+    text-align: center;
+}
+
+.menu {
+    position: absolute;
+    left: 0;
+    z-index: 900;
+    width: 100%;
+    bottom: 0;
+}
+
+.menu label {
+    cursor: pointer;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: #fff;
+    border-radius: 50px;
+    margin: 0 0.2em 1em;
+}
+
+.menu label:hover, .menu label:focus {
+    cursor: pointer;
+    background: var(--baseColor2);
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 10;
+    padding: 8em 1em 0;
+    background-size: cover;
+    background-position: 50% 50%;
+    transition: left 0s 0.75s;
+}
+
+[id^="slide"]:checked + .slide {
+    left: 0;
+    z-index: 100;
+    transition: left 0.65s ease-out;
+}
+
+.slide-1, .dot1 {
+    background-image: url("images/border.jpg");   
+}
+
+.slide-2 {
+    background-image: url("images/corgi3.jpg");   
+}
+
+.slide-3 {
+    background-image: url("images/leonberg.jpg");   
+}
+
+.slide-4 {
+    background-image: url("images/tamaskan2.jpg");   
+}
+
+.slide-5 {
+    background-image: url("images/husky2.jpg");   
+}
+
+/** BOUTON QUITTER ********** */
+
+#quitter {
+    top: 95%; 
+    left: 50%; /* à 50%/50% du parent référent */
+    transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
+    position: fixed;
+    display: flex;
+    background-color: var(--baseColor);
+}
+
+.quit {
+    text-align: center;
+    font-size: 1em;
+    padding : 10px 0px;
+}
+
+.quit span {
+    padding : 10px 15px;
+    text-decoration: none;
+    color: white;
+}
+
+.quit :hover {
+    cursor: pointer;
+    text-decoration: none;
+    background-color: var(--baseColor2);
+}
+
+/** FIN BOUTON QUITTER ***** */
+
+/** FIN DIAPORAMA ******** */
